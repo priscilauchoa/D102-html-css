@@ -1,0 +1,72 @@
+/*  ESTRUTURA CSS
+ Seletor {
+    propriedade: valor;
+} */
+
+body{ 
+    background-color: rgb(194, 153, 233);
+    font-family: sans-serif;
+    margin: 2;
+}
+
+header{
+    background-color: rgb(88, 9, 88);
+    border-radius: 15px;
+    box-shadow: 1px 1px 55px 15px rgb(202, 48, 151)
+}
+
+/* seletor composto : pega todas as tag  exemplo: nav a --- nesse caso ele irá colocar efeito em todos os a dentro de nav PAI FILHO NETO*/
+
+nav a{
+    color: rgb(202, 48, 151);
+    text-decoration: none;
+    /* tira o sublinhado da ancora */
+}
+
+.cor-vermelha{
+    color: red;
+}
+
+#header-pesquisa{
+    color: green;
+}
+
+#header-pesquisa::placeholder{
+    /* placeholder irá mudar os textos que ficam fixos na textbox */
+    color: blueviolet;
+}
+
+textarea{
+    resize:none;
+}
+
+.form-contato p, .form-contato h3{
+    /* está aplicando nos seletores p e h3 dentro de form-contato */
+    font-size: 18pt;
+}
+
+.negrito{
+    font-weight: bold;
+}
+
+.negrito:hover{
+    /* a estilizção só muda quando o mouse esta em cima */
+    color: blue;
+}
+
+img{
+    cursor: pointer;
+    opacity: 0.5;
+}
+img:hover{
+    opacity: 5;
+}
+
+button{
+    cursor: pointer;
+}
+
+.form-contato{
+    border-radius: 15px;
+    box-shadow: 1px 1px 55px 15px rgb(202, 48, 151)
+}
